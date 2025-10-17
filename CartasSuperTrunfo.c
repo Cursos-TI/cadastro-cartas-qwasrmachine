@@ -18,6 +18,14 @@ int main() {
       float gdp;      // PIB
       int tours;      // Pontos turísticos
   } card;
+
+  float density(int pop, float area) {
+      return pop * area;
+  }
+  
+  float gdpcapita(int pop, float gdp) {
+      return gdp / pop;
+  }
   
   // Área para entrada de dados
 
@@ -64,6 +72,9 @@ int main() {
       printf("Área: %.2f km²\n", states[i].area);
       printf("PIB: %.2f\n", states[i].gdp);
       printf("Pontos Turísticos: %d\n", states[i].tours);
+      printf("Densidade: %.2f\n", density(states[i].pop, states[i].area));
+      printf("PIB per Capita: %.2f\n", gdpcapita(states[i].pop, states[i].gdp));
+      printf(".........................\n");
       printf("\n");
   }
   

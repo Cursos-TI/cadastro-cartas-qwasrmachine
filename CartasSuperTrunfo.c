@@ -72,7 +72,7 @@ int main() {
       printf("--- Dados da Carta %d ---\n", i+1);
       printf("Estado: %c\n", states[i].state);
       printf("Código: %s\n", states[i].code);
-      printf("Cidade: %s", states[i].name); // já inclui \n
+      printf("Cidade: %s\n", states[i].name); // já inclui \n
       printf("População: %d\n", states[i].pop);
       printf("Área: %.2f km²\n", states[i].area);
       printf("PIB: %.2f\n", states[i].gdp);

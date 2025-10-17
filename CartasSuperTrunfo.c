@@ -53,7 +53,7 @@ int main() {
       printf("Número de Pontos Turísticos: ");
       scanf("%d", &states[i].tours);
   
-      states[i].density = states[i].pop * states[i].area;
+      states[i].density = states[i].pop / states[i].area;
       states[i].gdpcapita = states[i].gdp / states[i].pop;
   
       states[i].power = states[i].pop + 
